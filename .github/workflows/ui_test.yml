@@ -2,9 +2,9 @@ name: UI Test Automation
 
 on:
   push:
-    branches: [main, dev]
+    branches: [Main, dev]
   pull_request:
-    branches: [main]
+    branches: [Main]
 
 jobs:
   test:

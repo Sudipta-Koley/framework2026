@@ -15,7 +15,6 @@ def cart_page(class_driver):
 
 
 class TestCart:
-
     @pytest.fixture(autouse=True)
     def _setup(self, cart_page):
         self.cart_page = cart_page

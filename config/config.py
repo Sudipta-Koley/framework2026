@@ -1,6 +1,12 @@
 import os
 USERNAME = os.getenv("SAUCE_USERNAME", "standard_user")
 PASSWORD = os.getenv("SAUCE_PASSWORD", "secret_sauce")
-URL = "https://www.saucedemo.com/"
-####lkj
+URL = os.getenv("SAUCE_URL", "https://www.saucedemo.com/")
+IMPLICIT_WAIT= int(os.getenv("IMPLICIT_WAIT" ,"20"))
+EXPLICIT_WAIT= int(os.getenv("EXPLICIT_WAIT","25"))
+HOMEPAGE_URL= os.getenv("HOMEPAGE_URL","https://www.saucedemo.com/inventory.html")
+CART_PAGE_URL=os.getenv("https://www.saucedemo.com/cart.html")
+TITLE = os.getenv("CART_TITLE","Your Cart")
+QTY = os.getenv("CART_QTY","1")
+DESCRIPTION = os.getenv("CART_DESCRIPTION","Sauce Labs Backpack")####lkj
 

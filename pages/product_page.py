@@ -13,9 +13,9 @@ class ProductPage(BasePage):
     ADD_TO_CART= (By.XPATH,  "//button[text()='Add to cart']")
     REMOVE=(By.XPATH,  "//button[text()='Remove']")
 
-        def open(self):
+    def open(self):
             """ Open the login page."""
-                super().open(URL)
+        super().open(URL)
         
     
         def click_product(self):

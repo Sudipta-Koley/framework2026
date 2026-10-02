@@ -25,8 +25,18 @@ class TestProduct:
     @pytest.mark.smoke
     def test_product_name_column(self):
         """TC-01 | PRODUCT NAME column header must be visible."""
-        assert self.product_page.get_product_name == PRODUCT_NAME
+        assert self.product_page.get_product_name() == PRODUCT_NAME
   
+    @pytest.mark.smoke
+    def test_product_image_column(self):
+        """TC-04 | Price column header must be visible."""
+        assert self.product_page.get_product_image() == PRODUCT_IMAGE
+
+    @pytest.mark.smoke
+    def test_product_description_column(self):
+        """TC-04 | Price column header must be visible."""
+        assert self.product_page.get_product_description() == PRODUCT_DESCRIPTION
+    
     @pytest.mark.smoke
     def test_product_price_column(self):
         """TC-04 | Price column header must be visible."""

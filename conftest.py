@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 import pytest
 
 @pytest.fixture
-def class_driver():
+def driver():
     options = Options()
     if os.getenv("CI"):
         options.add_argument("--headless=new")

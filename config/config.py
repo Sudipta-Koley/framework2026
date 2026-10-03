@@ -9,7 +9,4 @@ CART_PAGE_URL=os.getenv("https://www.saucedemo.com/cart.html")
 TITLE = os.getenv("CART_TITLE","Your Cart")
 QTY = os.getenv("CART_QTY","1")
 DESCRIPTION = os.getenv("CART_DESCRIPTION","Sauce Labs Backpack")####lkj
-PRODUCT_NAME=os.getenv("productname","Sauce Labs Backpack")
-PRODUCT_PRICE=os.getenv("productprice","$29.99")
-PRODUCT_DESCRIPTION=os.getenv("productdescription","carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.")
-###PRODUCT_IMAGE=os.getenv("productimage",)
+

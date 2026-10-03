@@ -2,18 +2,10 @@ import pytest
 from pages.login_page import LoginPage
 from pages.cart_page import CartPage,BasePage
 from pages.product_page import ProductPage
-from config.config import (
-    USERNAME,
-    PASSWORD,
-    PRODUCT_NAME,
-    PRODUCT_PRICE,
-    PRODUCT_DESCRIPTION,
-    
-    
-)
+from config.config import USERNAME, PASSWORD
 
 
-@pytest.fixture
+@pytest.fixture(scope="class")
 def product_page(class_driver):
     login = LoginPage(class_driver)
     login.open()
@@ -33,8 +25,6 @@ class TestProduct:
     @pytest.mark.smoke
     def test_product_name_column(self):
         """TC-01 | PRODUCT NAME column header must be visible."""
-        pro=self.product_page.get_product_name()
-        print(pro)
         assert self.product_page.get_product_name() == PRODUCT_NAME
   
     @pytest.mark.smoke

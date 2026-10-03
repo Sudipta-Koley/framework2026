@@ -4,7 +4,7 @@ from pages.cart_page import CartPage,BasePage
 from config.config import USERNAME, PASSWORD
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture
 def cart_page(class_driver):
     login = LoginPage(class_driver)
     login.open()

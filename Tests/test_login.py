@@ -7,7 +7,7 @@ from pages.login_page import LoginPage
 from config.config import USERNAME,PASSWORD
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture
 def login_page(class_driver):
     """One LoginPage instance for the whole class — browser stays open."""
     return LoginPage(class_driver)
